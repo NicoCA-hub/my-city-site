@@ -1,0 +1,86 @@
+body{
+    background: #edeef2;
+    /* background: #f0f6d7; */
+    font-family: "Radley", serif;
+    margin: 0;
+}
+#hero{
+    background-image: url("https://laud.udistrital.edu.co/sites/default/files/imagen-noticia/2023-05/LAUD%20Bogota.jpeg");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    color: #E8ECED;
+    padding: 5px 10px;
+    background-color: #5b7bb4;
+    border-radius: 8px;
+    margin:160px 100px 0 100px 
+}
+.intro{
+    color: #E8ECED;
+    padding: 5px 10px;
+    background-color: #02356a;
+    border-radius: 8px;
+    margin:40px 50px 160px 50px;
+}
+#activities{
+    background: #8da5bd;
+    /* background: #b6c487; */
+    background-size: cover;
+    text-align: center;
+    color: #2b2839;
+    padding: 4px 0;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+}
+.act{
+    padding: 5px 10px 0 10px;
+    width: auto;
+}
+#security{
+    background: #c7cfde;
+    /* background: #d2dcb0; */
+    background-size: cover;
+    padding: 1px 20px 4px 20px;
+    text-align: left;
+    color: #2b2839;
+}
+ul{
+    column-count: 2;
+    column-gap: 20px;
+}
+.act_img{
+    /* Makes a image "crop" */
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.card{
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    padding: 25px;
+    margin: 40px auto;
+    background: #cee5fa;
+    border-bottom:5px solid #d8cefe;
+    border-radius: 8px;
+}
+.text{
+    text-align:left;
+    color: #2b2839;
+}
+#Avatar{
+    object-fit: cover;
+    object-position: left;
+    width: 180px;
+    height: 200px;
+    margin-right: 25px;
+    border-radius: 8px;
+}
