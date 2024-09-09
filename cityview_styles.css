@@ -12,20 +12,22 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
-.title{
+.heroStyle{
     color: #E8ECED;
     padding: 5px 10px;
+    border-radius: 8px;
+}
+#hero h1{
     background-color: #5b7bb4;
-    border-radius: 8px;
-    margin:160px 100px 0 100px 
+    margin:160px 100px 0 100px;
+    font-size: 44px;
 }
-.intro{
-    color: #E8ECED;
-    padding: 5px 10px;
+#hero h3{
     background-color: #02356a;
-    border-radius: 8px;
     margin:40px 50px 160px 50px;
+    font-size: 20px;
 }
 #activities{
     background: #8da5bd;
@@ -35,38 +37,65 @@ body{
     color: #2b2839;
     padding: 4px 0;
 }
+#activities h3{
+    font-size: 26px;
+    text-decoration: underline;
+    margin-bottom: 45px;
+}
 .content{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    margin-bottom: 30px;
 }
 .act{
-    padding: 5px 10px 0 10px;
+    padding: 5px 15px 0 15px;
     width: auto;
+}
+.act h4{
+    font-size: 18px;
+}
+.act p{
+    font-size: 16px;
+}
+.act_img{
+    /* Makes a image "crop" */
+    object-fit: cover;
+    height: 22vh;
+    width: 22vh;
+    min-width: 150px;
+    min-height: 150px;
+    border-radius: 50%;
 }
 #security{
     background: #c7cfde;
     /* background: #d2dcb0; */
     background-size: cover;
     padding: 1px 20px 4px 20px;
-    text-align: left;
     color: #2b2839;
+}
+#security h3{
+    text-align: center;
+    font-size: 26px;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+.lista{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
 }
 ul{
     column-count: 2;
-    column-gap: 20px;
-}
-.act_img{
-    /* Makes a image "crop" */
-    object-fit: cover;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
+    column-gap: 10vw;
+    font-size: 17px;
 }
 .card{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 400px;
-    padding: 25px;
+    padding: 15px;
     margin: 40px auto;
     background: #cee5fa;
     border-bottom:5px solid #d8cefe;
@@ -76,6 +105,15 @@ ul{
     text-align:left;
     color: #2b2839;
 }
+.text h3{
+    font-size: 20px;
+}
+.text p{
+    font-size: 16px;
+}
+.text h4{
+    font-size: 18px;
+}
 #Avatar{
     object-fit: cover;
     object-position: left;
@@ -83,4 +121,9 @@ ul{
     height: 200px;
     margin-right: 25px;
     border-radius: 8px;
+}
+@media (max-width: 960px){
+    .content{
+        grid-template-columns: repeat(2, 2fr);
+    }    
 }
